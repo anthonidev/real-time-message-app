@@ -1,12 +1,9 @@
-"use client";
-import { signOut } from "next-auth/react";
+import EmptyState from "@/components/EmptyState";
 
 const User = () => {
   return (
-    <div>
-      <button type="button" onClick={() => signOut()}>
-        logout
-      </button>
+    <div className="hidden lg:block lg:pl-80 h-full">
+      <EmptyState />
     </div>
   );
 };
